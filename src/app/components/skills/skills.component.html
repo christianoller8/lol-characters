@@ -1,0 +1,17 @@
+<div #demoYouTubePlayer class="demo-youtube-player">
+  <div>
+    <div class="center-video">
+      <youtube-player
+        videoId="{{ character.video }}"
+        suggestedQuality="highres"
+        [height]="500"
+        [width]="750"
+        [startSeconds]="4"
+        [endSeconds]="8"
+      >
+      </youtube-player>
+    </div>
+  </div>
+</div>
+
+<a [routerLink]="['skins']">Go To Skins</a>

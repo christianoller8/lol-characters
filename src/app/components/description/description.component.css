@@ -1,0 +1,79 @@
+* {
+  font-family: "Alkatra", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Contenedor para la imagen de fondo */
+.fullscreen-container {
+  position: relative; /* Posicionamiento relativo para elementos absolutamente posicionados dentro */
+  width: 100vw; /* Ancho al 100% de la ventana del navegador */
+  height: 100vh; /* Altura al 100% de la ventana del navegador */
+  overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones del contenedor */
+}
+
+/* Imagen de fondo */
+.wallpaper-image {
+  position: absolute; /* Posicionamiento absoluto para cubrir el contenedor padre */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ancho al 100% para cubrir todo el contenedor */
+  height: 100%; /* Altura al 100% para cubrir todo el contenedor */
+  object-fit: cover; /* Escala la imagen para cubrir el contenedor y recorta el exceso */
+}
+
+/* Contenedor para la información del personaje */
+.character-info {
+  position: absolute; /* Posicionamiento absoluto para centrar el contenido */
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Desplaza el contenido hacia arriba y la izquierda para centrarlo */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Tabla de información del personaje */
+table {
+  width: 100%; /* Ancho al 100% para ajustarse al ancho del contenedor padre */
+  border-collapse: collapse; /* Combina las celdas de la tabla en una sola estructura */
+}
+
+/* Estilos de celda de encabezado de tabla */
+th {
+  color: white; /* Color de texto */
+  text-align: left; /* Alineación de texto */
+  padding: 10px 20px; /* Relleno interior */
+  background-color: #333333; /* Fondo de encabezado */
+  border-bottom: 1px solid #ccc; /* Borde inferior */
+}
+
+/* Estilos de celda de tabla */
+td {
+  font-size: 20px; /* Tamaño de texto */
+  text-align: left; /* Alineación de texto */
+  padding: 10px 20px; /* Relleno interior */
+  border-bottom: 1px solid #ccc; /* Borde inferior */
+}
+
+/* Botón para ir a la página de habilidades */
+a {
+  margin-top: 20px; /* Margen superior */
+  border-radius: 15px; /* Radio de borde */
+  margin-left: 22rem; /* Margen izquierdo */
+  border: 1px solid #232222; /* Borde */
+  display: inline-block; /* Mostrar como bloque */
+  cursor: pointer; /* Cursor */
+  background-color: white;
+  color: #666666; /* Color de texto */
+  font-family: "Alkatra", sans-serif; /* Fuente */
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de fuente */
+  padding: 6px 24px; /* Relleno */
+  text-decoration: none; /* Decoración de texto */
+  text-shadow: 0 1px 0 #ffffff; /* Sombra de texto */
+  outline: 0; /* Sin contorno */
+}

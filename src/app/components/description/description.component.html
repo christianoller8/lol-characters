@@ -1,0 +1,31 @@
+<div class="fullscreen-container">
+  <img
+    class="wallpaper-image"
+    src="{{ character.image2 }}"
+    alt="{{ character.name }}"
+  />
+  <div class="character-info">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>{{ character.name }}</td>
+      </tr>
+      <tr>
+        <th>Alias</th>
+        <td>{{ character.alias }}</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>{{ character.description }}</td>
+      </tr>
+    </table>
+    <a
+      [routerLink]="['skills']"
+      routerLinkActive="activatebutton"
+      ariaCurrentWhenActive="page"
+      class="button"
+    >
+      Go to skills of {{ character.name }}
+    </a>
+  </div>
+</div>

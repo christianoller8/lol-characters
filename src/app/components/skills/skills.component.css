@@ -1,0 +1,45 @@
+element style {
+  background-color: #666666;
+}
+
+youtube-player {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  margin: 10px 10px;
+}
+
+.demo-youtube-player {
+  max-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.demo-youtube-player section {
+  width: 100%;
+  height: 100%;
+}
+
+.demo-youtube-player iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+a {
+  margin-top: 20px; /* Margen superior */
+  border-radius: 15px; /* Radio de borde */
+  margin-left: 43rem; /* Margen izquierdo */
+  border: 1px solid #232222; /* Borde */
+  cursor: pointer; /* Cursor */
+  background-color: white;
+  color: #666666; /* Color de texto */
+  font-family: "Alkatra", sans-serif; /* Fuente */
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de fuente */
+  padding: 6px 24px; /* Relleno */
+  text-decoration: none; /* Decoración de texto */
+  text-shadow: 0 1px 0 #ffffff; /* Sombra de texto */
+  outline: 0; /* Sin contorno */
+}
